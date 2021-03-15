@@ -8,22 +8,38 @@ import Rueda from "../../Img/rueda.png";
 import Vidrio from "../../Img/vidrio.jpg";
 
 function Carousel() {
-  const product = [Casco, Aceite, Baul, OtroCasco, Rueda, Vidrio];
+  const product = [
+    {
+      img: Casco,
+      desc: "Antiparras superpuestas, desmontables, diferentes colores",
+    },
+    { img: Aceite, desc: "Aceite 2 tiempos" },
+    { img: Baul, desc: "Especial repartidores" },
+    { img: OtroCasco, desc: "Especial repartidores" },
+    { img: Rueda, desc: "Especial repartidores" },
+    { img: Vidrio, desc: "Especial repartidores" },
+  ];
   const [slideIndex, setSlide] = useState(1);
 
   return (
     <div>
-      <h2>Slideshow Gallery</h2>
       {product.map((e, i) => {
         if (slideIndex === i + 1) {
-          return <img className="img-prod-carousel" src={e} />;
+          return (
+            <div>
+              <div className="descrption-p">
+                <h1>Descripcion</h1>
+                <p>{e.desc}</p>
+              </div>
+              <img className="img-prod-carousel" src={e.img} />
+            </div>
+          );
         }
       })}
       <div className="container">
         <div className="caption-container">
-          <p id="caption"></p>
+          <p id="caption">Nombre del Producto</p>
         </div>
-
         <div className="row">
           <div className="column">
             <img

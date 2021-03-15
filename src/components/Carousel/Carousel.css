@@ -8,6 +8,7 @@ img {
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
+  margin: 0px 10%;
   position: relative;
 }
 
@@ -73,10 +74,20 @@ img {
 }
 
 .img-prod {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 }
 .img-prod-carousel {
-  width: 300px;
-  height: 300px;
+  margin-left: 215mm;
+  width: 400px;
+  height: 400px;
+}
+h2 {
+  text-align: center;
+}
+.descrption-p {
+  background-color: chartreuse;
+  position: absolute;
+  margin: 0px 10%;
+  padding-right: 71mm;
 }
