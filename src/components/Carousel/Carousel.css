@@ -81,13 +81,13 @@ img {
   margin-left: 215mm;
   width: 400px;
   height: 400px;
+  text-align: center;
 }
 h2 {
   text-align: center;
 }
 .descrption-p {
-  background-color: chartreuse;
   position: absolute;
   margin: 0px 10%;
-  padding-right: 71mm;
+  text-align: center;
 }

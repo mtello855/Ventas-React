@@ -28,7 +28,6 @@ function Carousel() {
           return (
             <div>
               <div className="descrption-p">
-                <h1>Descripcion</h1>
                 <p>{e.desc}</p>
               </div>
               <img className="img-prod-carousel" src={e.img} />

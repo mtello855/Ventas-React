@@ -1,7 +1,13 @@
 import React from "react";
+import Section from "./Section/Section";
 import Carousel from "./Carousel/Carousel";
 
 function Content() {
-  return <Carousel />;
+  return (
+    <div>
+      <Carousel />
+      <Section />
+    </div>
+  );
 }
 export default Content;
