@@ -31,5 +31,17 @@
       height: 220px;
   }
   .card-product{
-      margin-top: 15%;
+    flex: 1 0 33%;
+    text-align: center;
+  }
+  .cardsGrid{
+    display: flex;
+    flex-wrap: wrap;  
+    margin: 0px 10%;
+  }
+  .descriptionCard{
+    text-align: center;
+  }
+  p{
+    margin: 0 !important;
   }
