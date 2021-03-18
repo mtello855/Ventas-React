@@ -26,7 +26,7 @@ function Carousel() {
       {product.map((e, i) => {
         if (slideIndex === i + 1) {
           return (
-            <div>
+            <div className="carousel">
               <div className="descrption-p">
                 <p>{e.desc}</p>
               </div>
