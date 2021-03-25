@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logoCiro from "../logo.png";
 function Navbar() {
   return (
@@ -6,13 +7,13 @@ function Navbar() {
       <div>
         <img className="Logo" src={logoCiro} />
       </div>
-      <a href="#">HOME</a>
-      <a href="#">ACCESORIOS</a>
-      <a href="#">ACEITES</a>
-      <a href="#">CASCOS</a>
-      <a href="#">ESCAPES</a>
+      <Link to="/">HOME</Link>
+      <Link to="/accesorios">ACCESORIOS</Link>
+      <Link to="#">ACEITES</Link>
+      <Link to="#">CASCOS</Link>
+      <Link to="#">ESCAPES</Link>
       <div>
-        <a className="cart" href="#">
+        <a className="cart" to="#">
           {" "}
           &#128722;{" "}
         </a>

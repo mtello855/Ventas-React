@@ -1,0 +1,13 @@
+.productPrePurchase {
+  display: flex;
+  justify-content: space-between;
+}
+.logoPP {
+  width: 80px;
+  height: 80px;
+}
+.PrePurchase {
+  border-color: aquamarine;
+  border-style: ridge;
+  padding: 0px 110px;
+}
