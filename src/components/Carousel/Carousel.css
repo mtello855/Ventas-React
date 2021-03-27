@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-img {
-  vertical-align: middle;
-}
-
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   margin: 0px 10%;
@@ -89,8 +85,7 @@ h2 {
 .descrption-p {
   position: absolute;
   margin: 11% 20%;
-  
 }
-.carousel{
+.carousel {
   margin-top: 5%;
 }

@@ -1,17 +1,20 @@
 import React, { useState } from "react";
-import "./Section.css";
+import "./GalleryProducts.css";
+import Addtocart from "../AddToCart/Addtocart";
+
 import Casco from "../../Img/casco.jpg";
 import Aceite from "../../Img/aceite.jpg";
 import Baul from "../../Img/baul.jpg";
 import OtroCasco from "../../Img/otrocasco.jpg";
 import Rueda from "../../Img/rueda.png";
 import Vidrio from "../../Img/vidrio.jpg";
-import Addtocart from "./../AddToCart/Addtocart";
+import { Link } from "react-router-dom";
+import Addtocard from "../AddToCart/Addtocart";
 
 const productCards = [
   {
     img: Casco,
-    desc: "Antiparras superpuestas",
+    desc: "Antiparras ",
   },
   { img: Aceite, desc: "Aceite 2 tiempos" },
   { img: Baul, desc: "Especial repartidores" },
@@ -20,23 +23,19 @@ const productCards = [
   { img: Vidrio, desc: "Especial repartidores" },
 ];
 
-function Section() {
+function Accesorios() {
   const [testHook, setTestHook] = useState(0);
   return (
-    <div className="cardsGrid">
+    <div className="galleryAcces">
       {productCards.map((e, i) => {
-        console.log(i);
         return (
-          <div className="card-product">
-            <h2>Product Card</h2>
-            <div className="card">
-              <img className="img-Card" src={e.img} />
-              <h1>Tailored Jeans</h1>
-              <p className="price">$19.99</p>
-              <p className="descriptionCard">{e.desc}</p>
-              <p>
-                <Addtocart />
-              </p>
+          <div className="gallery">
+            <Link to="/product" href="img_5terre.jpg">
+              <img src={e.img} />
+            </Link>
+            <div className="desc">{e.desc}</div>
+            <div className="addTCgallery">
+              <Addtocard />
             </div>
           </div>
         );
@@ -45,4 +44,4 @@ function Section() {
   );
 }
 
-export default Section;
+export default Accesorios;

@@ -1,0 +1,23 @@
+div.gallery {
+  margin: 22px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 178px;
+  height: 180px;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+.addTCgallery {
+  margin: 0px 20px 15px;
+}

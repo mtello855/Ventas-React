@@ -1,21 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logoCiro from "../logo.png";
+import Cart from "./Cart/Cart";
+
 function Navbar() {
   return (
     <div className="main">
       <div>
         <img className="Logo" src={logoCiro} />
       </div>
-      <a href="#">HOME</a>
-      <a href="#">ACCESORIOS</a>
-      <a href="#">ACEITES</a>
-      <a href="#">CASCOS</a>
-      <a href="#">ESCAPES</a>
+      <Link to="/">HOME</Link>
+      <Link to="/gallery">ACCESORIOS</Link>
+      <Link to="/gallery">ACEITES</Link>
+      <Link to="/gallery">CASCOS</Link>
+      <Link to="/gallery">ESCAPES</Link>
       <div>
-        <a className="cart" href="#">
-          {" "}
-          &#128722;{" "}
-        </a>
+        <Cart />
       </div>
     </div>
   );
