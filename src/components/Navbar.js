@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logoCiro from "../logo.png";
+import Cart from "./Cart/Cart";
+
 function Navbar() {
   return (
     <div className="main">
@@ -8,15 +10,12 @@ function Navbar() {
         <img className="Logo" src={logoCiro} />
       </div>
       <Link to="/">HOME</Link>
-      <Link to="/accesorios">ACCESORIOS</Link>
-      <Link to="#">ACEITES</Link>
-      <Link to="#">CASCOS</Link>
-      <Link to="#">ESCAPES</Link>
+      <Link to="/gallery">ACCESORIOS</Link>
+      <Link to="/gallery">ACEITES</Link>
+      <Link to="/gallery">CASCOS</Link>
+      <Link to="/gallery">ESCAPES</Link>
       <div>
-        <a className="cart" to="#">
-          {" "}
-          &#128722;{" "}
-        </a>
+        <Cart />
       </div>
     </div>
   );

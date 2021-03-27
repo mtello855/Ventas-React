@@ -15,6 +15,9 @@ div.gallery img {
 }
 
 div.desc {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
+}
+.addTCgallery {
+  margin: 0px 20px 15px;
 }

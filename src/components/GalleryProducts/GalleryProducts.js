@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./Accesorios.css";
+import "./GalleryProducts.css";
+import Addtocart from "../AddToCart/Addtocart";
 
 import Casco from "../../Img/casco.jpg";
 import Aceite from "../../Img/aceite.jpg";
@@ -8,6 +9,7 @@ import OtroCasco from "../../Img/otrocasco.jpg";
 import Rueda from "../../Img/rueda.png";
 import Vidrio from "../../Img/vidrio.jpg";
 import { Link } from "react-router-dom";
+import Addtocard from "../AddToCart/Addtocart";
 
 const productCards = [
   {
@@ -28,10 +30,13 @@ function Accesorios() {
       {productCards.map((e, i) => {
         return (
           <div className="gallery">
-            <Link to="/product" target="_blank" href="img_5terre.jpg">
+            <Link to="/product" href="img_5terre.jpg">
               <img src={e.img} />
             </Link>
             <div className="desc">{e.desc}</div>
+            <div className="addTCgallery">
+              <Addtocard />
+            </div>
           </div>
         );
       })}

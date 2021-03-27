@@ -6,6 +6,7 @@ import Baul from "../../Img/baul.jpg";
 import OtroCasco from "../../Img/otrocasco.jpg";
 import Rueda from "../../Img/rueda.png";
 import Vidrio from "../../Img/vidrio.jpg";
+import Addtocart from "./../AddToCart/Addtocart";
 
 const productCards = [
   {
@@ -34,7 +35,7 @@ function Section() {
               <p className="price">$19.99</p>
               <p className="descriptionCard">{e.desc}</p>
               <p>
-                <button>Add to Cart</button>
+                <Addtocart />
               </p>
             </div>
           </div>

@@ -42,19 +42,17 @@
   background-color: black;
   display: flex;
   justify-content: space-around;
-  font-family: emoji;
 }
 a {
   text-decoration: none;
   color: white;
   margin-top: 3%;
 }
-.cart {
-  margin-top: 3%;
-  font-size: -webkit-xxx-large;
-}
 .Logo {
   width: 75px;
   height: 75px;
   margin: 10%;
+}
+#root {
+  font-family: "Montserrat", sans-serif;
 }

@@ -1,13 +1,44 @@
 .productPrePurchase {
   display: flex;
   justify-content: space-between;
+  margin-top: 3%;
 }
 .logoPP {
   width: 80px;
   height: 80px;
+  margin-left: 38%;
+}
+.imgProd {
+  width: 20em;
+  height: 20em;
 }
 .PrePurchase {
-  border-color: aquamarine;
+  border-color: #c8c4c3;
   border-style: ridge;
-  padding: 0px 110px;
+  width: 25%;
+  margin-right: 1%;
+}
+.imgPaymentMethod {
+  width: 49px;
+  height: 40px;
+  padding: 9px 5px 0px;
+  margin-top: 5px;
+}
+.methodPayment {
+  display: flex;
+  justify-content: space-around;
+}
+.iconsCards :first-child {
+  padding: 9px 0px 0px;
+}
+.hrPrice {
+  margin: 0px 67% 0px 0px;
+}
+.priceProduct {
+  padding: 0px 0px 10px 10px;
+  font-size: xx-large;
+}
+.quantity {
+  display: flex;
+  justify-content: center;
 }

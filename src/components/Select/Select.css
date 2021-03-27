@@ -1,0 +1,9 @@
+select:focus {
+  outline: none;
+}
+#selectUnit {
+  border: none;
+  background: transparent;
+  margin: 20px 2px;
+  width: 63px;
+}
