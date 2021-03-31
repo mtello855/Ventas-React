@@ -84,7 +84,10 @@ h2 {
 }
 .descrption-p {
   position: absolute;
-  margin: 11% 20%;
+  margin: 0% 44% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .carousel {
   margin-top: 5%;

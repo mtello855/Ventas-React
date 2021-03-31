@@ -23,7 +23,7 @@ const productCards = [
   { img: Vidrio, desc: "Especial repartidores" },
 ];
 
-function Accesorios() {
+function GalleryProducts() {
   const [testHook, setTestHook] = useState(0);
   return (
     <div className="galleryAcces">
@@ -44,4 +44,4 @@ function Accesorios() {
   );
 }
 
-export default Accesorios;
+export default GalleryProducts;
