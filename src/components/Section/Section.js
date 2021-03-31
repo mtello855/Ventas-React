@@ -1,41 +1,20 @@
 import React, { useState } from "react";
 import "./Section.css";
-import Casco from "../../Img/casco.jpg";
-import Aceite from "../../Img/aceite.jpg";
-import Baul from "../../Img/baul.jpg";
-import OtroCasco from "../../Img/otrocasco.jpg";
-import Rueda from "../../Img/rueda.png";
-import Vidrio from "../../Img/vidrio.jpg";
-import Addtocart from "./../AddToCart/Addtocart";
+import SeeDetails from "./../SeeDetails/SeeDetails";
 
-const productCards = [
-  {
-    img: Casco,
-    desc: "Antiparras superpuestas",
-  },
-  { img: Aceite, desc: "Aceite 2 tiempos" },
-  { img: Baul, desc: "Especial repartidores" },
-  { img: OtroCasco, desc: "Especial repartidores" },
-  { img: Rueda, desc: "Especial repartidores" },
-  { img: Vidrio, desc: "Especial repartidores" },
-];
-
-function Section() {
-  const [testHook, setTestHook] = useState(0);
+function Section(props) {
   return (
     <div className="cardsGrid">
-      {productCards.map((e, i) => {
-        console.log(i);
+      {props?.itemData.map((e, i) => {
         return (
           <div className="card-product">
-            <h2>Product Card</h2>
             <div className="card">
-              <img className="img-Card" src={e.img} />
-              <h1>Tailored Jeans</h1>
-              <p className="price">$19.99</p>
-              <p className="descriptionCard">{e.desc}</p>
+              <img className="img-Card" src={e.image} />
+              <h1>{e.name}</h1>
+              <p className="price">${e.value}</p>
+              <p className="descriptionCard">{e.descripcion}</p>
               <p>
-                <Addtocart />
+                <SeeDetails id={e.id} />
               </p>
             </div>
           </div>

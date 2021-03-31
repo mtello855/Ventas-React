@@ -1,7 +1,8 @@
 .stock {
-  text-align: center;
   color: white;
   background-color: green;
   border-radius: 30px;
   font-size: large;
+  width: 115px;
+  margin-left: 39%;
 }
