@@ -14,7 +14,7 @@ function Product(props) {
     <div>
       {props?.itemData.map((e, i) => {
         if (e.id === parseInt(window.location.search.substring(1))) {
-          console.log("hola laconha de tu hermana");
+          
           return (
             <div className="productPrePurchase">
               <div>
