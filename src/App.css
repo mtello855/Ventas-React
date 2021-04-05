@@ -36,12 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
 /*Navbar*/
 
-.main {
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
+@media only screen and (max-width: 600px) {
+  .main {
+    background-color: black;
+  }
+  .main a {
+    margin: 0px;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .main a:hover {
+    background-color: red;
+  }
+  .main a.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  .Logo {
+    position: absolute;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .main {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 a {
   text-decoration: none;
