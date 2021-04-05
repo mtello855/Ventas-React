@@ -1,10 +1,14 @@
+@media only screen and (max-width: 600px) {
+  .dropdown {
+    position: relative;
+  }
+}
 .cart {
   margin-top: 3%;
   font-size: -webkit-xxx-large;
 }
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
