@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logoCiro from "../logo.png";
 import Cart from "./Cart/Cart";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="main">
       <div>
@@ -15,7 +15,7 @@ function Navbar() {
       <Link to="/gallery">CASCOS</Link>
       <Link to="/gallery">ESCAPES</Link>
       <div>
-        <Cart />
+        <Cart itemCart={props.itemCart} />
       </div>
     </div>
   );

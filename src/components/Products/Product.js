@@ -3,7 +3,6 @@ import "./Product.css";
 import Select from "../Select/Select";
 import Addtocard from "../AddToCart/Addtocart";
 import Stock from "./../Stock/Stock";
-import Baul from "../../Img/baul.jpg";
 import logoCiro from "../../../src/logo.png";
 import Visa from "../../Img/visa-logo.png";
 import MasterC from "../../Img/mastercard-logo.png";
@@ -40,7 +39,12 @@ function Product(props) {
                 </div>
                 <hr />
                 <div className="quantity">
-                  <p>Quantity : </p> <Select /> <Addtocard />
+                  <p>Quantity : </p> <Select />{" "}
+                  <Addtocard
+                    setCart={props.setCart}
+                    itemC={e}
+                    itemCart={props.itemCart}
+                  />
                 </div>
               </div>
             </div>

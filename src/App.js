@@ -8,6 +8,7 @@ import "./App.css";
 
 function App() {
   const [item, setItem] = useState([]);
+  const [cart, setCart] = useState([]);
   useEffect(() => {
     fetch("https://demo3024862.mockable.io/products")
       .then((response) => response.json())
@@ -16,22 +17,18 @@ function App() {
   console.log(item);
   return (
     <Router>
-      <Navbar />
+      <Navbar itemCart={cart} />
       <Route exact path="/">
         <Content itemData={item} />
       </Route>
       <Route exact path="/gallery">
-        <GalleryProducts itemData={item} />
+        <GalleryProducts itemData={item} setCart={setCart} itemCart={cart} />
       </Route>
       <Route exact path="/product">
-        <Product itemData={item} />
+        <Product itemData={item} setCart={setCart} itemCart={cart} />
       </Route>
     </Router>
   );
 }
 
 export default App;
-/*<Route
-  path="/dashboard"
-  render={(props) => <Dashboard {...props} isAuthed={true} />}
-/>;*/

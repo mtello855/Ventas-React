@@ -1,3 +1,18 @@
+@media only screen and (max-width: 600px) {
+  .productPrePurchase {
+    display: block !important;
+  }
+  .PrePurchase {
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
+  .imgProd {
+    width: 15em !important;
+    height: 15em !important;
+    margin-left: 25% !important;
+  }
+}
+
 .productPrePurchase {
   display: flex;
   justify-content: space-between;

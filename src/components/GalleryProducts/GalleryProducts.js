@@ -10,12 +10,16 @@ function GalleryProducts(props) {
       {props?.itemData.map((e, i) => {
         return (
           <div className="gallery">
-            <Link to={`/product?${props.id}`}>
+            <Link to={`/product?${e.id}`}>
               <img src={e.image} />
             </Link>
             <div className="desc">{e.descripcion}</div>
             <div className="addTCgallery">
-              <Addtocard />
+              <Addtocard
+                itemCart={props.itemCart}
+                itemC={e}
+                setCart={props.setCart}
+              />
             </div>
           </div>
         );
