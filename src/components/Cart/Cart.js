@@ -1,10 +1,10 @@
 import React from "react";
 import "./Cart.css";
-import { Link } from "react-router-dom";
-import OtroCasco from "./../../Img/otrocasco.jpg";
 
 function Cart(props) {
   console.log(props);
+  const { itemCart } = props;
+
   return (
     <div className="dropdown">
       <div className="cart"> &#128722; </div>
@@ -17,7 +17,6 @@ function Cart(props) {
               <img className="imgPrePurchase" src={e.image} />
               <div className="descriptionProd">
                 <h1>{e.name}</h1>
-                <p>{e.descripcion}</p>
                 <p>Code: 95585</p>
                 <p>Quantity = </p>
                 <p>$ {e.value}</p>
